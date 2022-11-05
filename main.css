@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root{
  --primarycolor: #0074f3;
  --blackcolormatt: black;
+ --titlecolor: #34568B;
 }
 *{
     padding: 0;
@@ -29,7 +32,9 @@ margin-bottom: 24px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 12px;
 
-    
+}
+.last-div { 
+    padding-bottom: 50px;
 
 }
 i{
@@ -41,21 +46,36 @@ i{
 a{
     text-decoration: none;
 }
+a:hover{
+    color: var(--primarycolor);
+}
 .nav-title{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 12px;
+    text-align: center;
 }
 span{
     color: var(--primarycolor);
+    
 }
 .hero{
 
 width: 100%;
 
 }
+.column p{
+    color: white;
+    font-size: 19x;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
 .hero-title{
     text-align: center;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--titlecolor);
+    font-family: Arial, Helvetica, sans-serif;
     
 }
 .column{
@@ -78,14 +98,14 @@ display: table;
     height: 280px;
 }
 
-.prices-hero tr {
+.prices-hero {
    /*  */
-    margin: 14px;
+    margin: 20px 0px 0px 13px;
 }
 table {
     color: white;
-/* margin-left: auto;
-margin-right: auto; */
+margin-left: auto;
+margin-right: auto;
 font-size: 18px;
 
 }
@@ -95,13 +115,119 @@ table tr, th, td{
     padding: 3px;
     text-align: center;
     list-style-position: inside;
+    font-family: Arial, Helvetica, sans-serif
 
 }
 .padding-inside {
-    padding: 8px;
+    padding: 12px;
 
 }
 
 .prices-title{
-    padding-top: 20px;
+    text-align: center;
+    margin-bottom: 26px;
+    position: relative;
+    top: 8px;
+    font-size: 2.8rem;
+    color: #34568B;
 }
+
+.prices-div p {
+    color: white;
+    margin-left: 13px;
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+.about-block{
+
+    width: 100%;
+    margin-top: 20px;
+    
+}
+.about-block p {
+    color: white;
+    font-size: 19px;
+    
+}
+.about-title{
+    color: #34568B;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.about-block p{
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.flex-container {
+    display: flex;
+    height: 670px;
+}
+
+.flex-child {
+    flex: 1;
+    border: 2px solid var(--primarycolor);
+    
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
+input, label, textarea, select{
+    display: block;
+    margin-left: 8px;
+    margin-bottom: 20px;
+    margin-top: 9px;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 3px;
+    padding-right: 80px;
+    font-family: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+input:hover
+{
+    border: 1px solid var(--primarycolor)
+}
+
+
+::placeholder{
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(97, 96, 96);
+    font-weight: 200;
+
+}
+.left-button{
+position: relative;
+left: 50%;
+padding: 12px;
+background-color: var(--primarycolor);
+border-radius: 10px;
+color: white;
+cursor: pointer;
+}
+
+iframe{
+    padding: 8px 0px 0px 14px;
+    
+}
+#right-map{
+    background-color: bro;
+}
+
+.Contact-title{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+    color: var(--titlecolor);
+}
+
